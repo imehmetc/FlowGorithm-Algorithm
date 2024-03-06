@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-28 03:47:24 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yODswMzozNzoyMCBQTTsyMzk1"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yODswMzo0NzoyNCBQTTsyOzI1MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <declare name="sonuc" type="String" array="False" size=""/>
+            <output expression="&quot;Say&#305; Giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <if expression="sayi % 2 == 0">
+                <then>
+                    <assign variable="sonuc" expression="&quot;&#231;ift&quot;"/>
+                </then>
+                <else>
+                    <assign variable="sonuc" expression="&quot;tek&quot;"/>
+                </else>
+            </if>
+            <output expression="sayi &amp; &quot; say&#305;s&#305; bir &quot; &amp; sonuc &amp; &quot; say&#305;d&#305;r.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

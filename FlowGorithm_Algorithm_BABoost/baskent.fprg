@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-29 09:46:04 AM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTswOTozNzowMiBBTTsyMzg3"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTswOTo0NjowNCBBTTsxOzI0OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;T&#252;rkiye'nin ba&#351;kenti neresidir?&quot;" newline="True"/>
+            <declare name="capitalCity" type="String" array="False" size=""/>
+            <input variable="capitalCity"/>
+            <if expression="capitalCity == &quot;ankara&quot; || capitalCity == &quot;Ankara&quot; || capitalCity == &quot;ANKARA&quot;">
+                <then>
+                    <output expression="&quot;Do&#287;ru!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Yanl&#305;&#351;&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

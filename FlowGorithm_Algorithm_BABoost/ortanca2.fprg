@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-28 05:30:49 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yODswNToyNDowOCBQTTsyMzk5"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yODswNTozMDo0OSBQTTsxOzI1MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Say&#305; girin&quot;" newline="True"/>
+            <declare name="a, b, c, yedek" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a &gt; b">
+                <then>
+                    <assign variable="yedek" expression="a"/>
+                    <assign variable="a" expression="b"/>
+                    <assign variable="b" expression="yedek"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="b &gt; c">
+                <then>
+                    <assign variable="yedek" expression="b"/>
+                    <assign variable="b" expression="c"/>
+                    <assign variable="c" expression="yedek"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="a &gt; b">
+                <then>
+                    <assign variable="yedek" expression="a"/>
+                    <assign variable="a" expression="b"/>
+                    <assign variable="b" expression="yedek"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;En K&#252;&#231;&#252;k&quot; &amp; a" newline="True"/>
+            <output expression="&quot;Ortanca&quot; &amp; b" newline="True"/>
+            <output expression="&quot;En b&#252;y&#252;k&quot; &amp; c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-01 10:22:53 AM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMy0wMTsxMDoxNzozNyBBTTsyMzc2"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMy0wMTsxMDoyMjo1MyBBTTsxOzI0Nzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sicaklik" type="Integer" array="False" size=""/>
+            <declare name="durum" type="String" array="False" size=""/>
+            <output expression="&quot;Suyun s&#305;cakl&#305;&#287;&#305;n&#305; girin&quot;" newline="True"/>
+            <input variable="sicaklik"/>
+            <if expression="sicaklik &lt;= 0">
+                <then>
+                    <assign variable="durum" expression="&quot;Buz&quot;"/>
+                </then>
+                <else>
+                    <if expression="sicaklik &gt; 0 AND sicaklik &lt; 100">
+                        <then>
+                            <assign variable="durum" expression="&quot;S&#305;v&#305;&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="durum" expression="&quot;Gaz&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="durum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

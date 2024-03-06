@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-01 03:34:32 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMy0wMTswMjo1NDo0MSBQTTsyMzg4"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMy0wMTswMzozNDozMiBQTTszOzI0OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="1-1000 aras&#305;ndaki asal say&#305;lar"/>
+            <declare name="i, sayi" type="Integer" array="False" size=""/>
+            <declare name="asalMi" type="Boolean" array="False" size=""/>
+            <for variable="sayi" start="2" end="1000" direction="inc" step="1">
+                <assign variable="asalMi" expression="true"/>
+                <for variable="i" start="2" end="Sqrt(sayi)" direction="inc" step="1">
+                    <if expression="sayi % i == 0">
+                        <then>
+                            <assign variable="asalMi" expression="false"/>
+                            <assign variable="i" expression="sayi"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="asalMi">
+                    <then>
+                        <output expression="sayi &amp; &quot; &quot;" newline="False"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

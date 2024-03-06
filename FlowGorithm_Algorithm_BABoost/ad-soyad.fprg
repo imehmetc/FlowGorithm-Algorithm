@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-28 02:55:21 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yODswMjo0MTozNCBQTTsyMzk0"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yODswMjo1NToyMSBQTTsyOzI1MDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Ad&#305;n&#305;z&quot;" newline="True"/>
+            <declare name="ad, soyad" type="String" array="False" size=""/>
+            <input variable="ad"/>
+            <output expression="&quot;Soyad&#305;n&#305;z&quot;" newline="True"/>
+            <input variable="soyad"/>
+            <output expression="&quot;Merhaba, &quot; &amp; ad &amp; &quot; &quot; &amp; soyad" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

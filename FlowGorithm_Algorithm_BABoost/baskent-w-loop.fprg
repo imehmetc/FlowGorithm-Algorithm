@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-29 10:00:25 AM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTswOTo1NTowNCBBTTsyMzg5"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTswOTo1NTowNyBBTTsxO2ltZWhtO0lNRUhNRVRDOzIwMjQtMDItMjk7MDk6Mzc6MDIgQU07YmFza2VudC5mcHJnOzYyMjY="/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTsxMDowMDoyNSBBTTsxOzI0ODI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;T&#252;rkiye'nin ba&#351;kenti neresidir?&quot;" newline="True"/>
+            <declare name="capitalCity" type="String" array="False" size=""/>
+            <input variable="capitalCity"/>
+            <while expression="capitalCity != &quot;ankara&quot;">
+                <output expression="&quot;Yanl&#305;&#351; l&#252;tfen tekrar girin&quot;" newline="True"/>
+                <input variable="capitalCity"/>
+            </while>
+            <output expression="&quot;Do&#287;ru&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

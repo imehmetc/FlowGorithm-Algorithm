@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-28 03:54:33 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yODswMzo0NzoyOSBQTTsyNDA1"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yODswMzo1NDozMyBQTTsxOzI1MDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2" type="Integer" array="False" size=""/>
+            <declare name="sonuc" type="String" array="False" size=""/>
+            <output expression="&quot;Say&#305; 1 Girin&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;Say&#305; 2 Girin&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <if expression="sayi1 &gt; sayi2">
+                <then>
+                    <assign variable="sonuc" expression="&quot;Say&#305;1, Say&#305;2'den B&#220;Y&#220;K: &quot; &amp; sayi1 &amp;&quot; &gt; &quot;&amp; sayi2"/>
+                </then>
+                <else>
+                    <assign variable="sonuc" expression="&quot;Say&#305;1, Say&#305;2'den K&#220;&#199;&#220;K: &quot;&amp; sayi1 &amp;&quot; &lt; &quot;&amp; sayi2"/>
+                </else>
+            </if>
+            <output expression="sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

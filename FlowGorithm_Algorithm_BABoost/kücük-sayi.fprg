@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-28 04:06:42 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yODswNDowMToyNCBQTTsyMzkx"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yODswNDowNjo0MiBQTTsxOzI1MDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2, sayi3, k&#252;c&#252;kSayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Say&#305; 1&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;Say&#305; 2&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <output expression="&quot;Say&#305; 3&quot;" newline="True"/>
+            <input variable="sayi3"/>
+            <if expression="sayi1 &lt; sayi2">
+                <then>
+                    <if expression="sayi1 &lt; sayi3">
+                        <then>
+                            <assign variable="k&#252;c&#252;kSayi" expression="sayi1"/>
+                        </then>
+                        <else>
+                            <assign variable="k&#252;c&#252;kSayi" expression="sayi3"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="sayi2 &lt; sayi3">
+                        <then>
+                            <assign variable="k&#252;c&#252;kSayi" expression="sayi2"/>
+                        </then>
+                        <else>
+                            <assign variable="k&#252;c&#252;kSayi" expression="sayi3"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;K&#252;&#231;&#252;k say&#305;: &quot; &amp; k&#252;c&#252;kSayi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

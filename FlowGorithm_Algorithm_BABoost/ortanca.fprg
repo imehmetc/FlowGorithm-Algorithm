@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-28 05:24:06 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yODswNDo1MjowOCBQTTsyMzk5"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yODswNToyNDowNiBQTTsxOzI1MDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2, sayi3, ortanca" type="Integer" array="False" size=""/>
+            <output expression="&quot;Say&#305; gir&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <input variable="sayi2"/>
+            <input variable="sayi3"/>
+            <if expression="sayi1 &gt;= sayi2 AND sayi1 &lt;= sayi3 OR sayi1 &gt;= sayi3 AND sayi1 &lt;= sayi2">
+                <then>
+                    <assign variable="orta" expression="sayi1"/>
+                </then>
+                <else>
+                    <if expression="">
+                        <then/>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

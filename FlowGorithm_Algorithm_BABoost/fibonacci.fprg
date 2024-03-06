@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-01 12:13:21 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMy0wMTsxMTo0Njo0OSBBTTsyMzgy"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMy0wMTsxMjoxMzoyMSBQTTsxOzI0OTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="&#246;nceki, simdiki, gecici" type="Integer" array="False" size=""/>
+            <assign variable="&#246;nceki" expression="0"/>
+            <assign variable="simdiki" expression="1"/>
+            <while expression="&#246;nceki &lt; 1000">
+                <output expression="&#246;nceki &amp; &quot; &quot;" newline="False"/>
+                <assign variable="gecici" expression="&#246;nceki"/>
+                <assign variable="&#246;nceki" expression="simdiki"/>
+                <assign variable="simdiki" expression="gecici + simdiki"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

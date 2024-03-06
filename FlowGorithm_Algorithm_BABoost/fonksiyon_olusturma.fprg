@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-01 05:41:39 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMy0wMTswNToxMjo1MyBQTTsyMzg4"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMy0wMTswNTo0MTozOSBQTTs2OzI1MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Karesi ad&#305;nda bir fonksiyon tan&#305;mlay&#305;n&#305;z. Bu fonksiyon bir Reel t&#252;r&#252;nde parametre almal&#305; ve ald&#305;&#287;&#305; de&#287;erin karesini d&#246;nd&#252;rmelidir."/>
+            <declare name="i, n" type="Real" array="False" size=""/>
+            <output expression="&quot;Bir say&#305; giriniz&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <call expression="KereYildizYazdir(i)"/>
+            </for>
+            <output expression="Karesi(n)" newline="True"/>
+            <call expression="KereYildizYazdir(1)"/>
+            <comment text="De&#287;eri None d&#246;nd&#252;rd&#252;&#287;&#252;m&#252;z i&#231;in 'Call' fonksiyonu ile &#231;a&#287;&#305;r&#305;yoruz."/>
+            <call expression="KereYildizYazdir(4)"/>
+            <comment text="-&#214;DEV-&#13;&#10;&#13;&#10;&#220;&#231;gen yazd&#305;r "/>
+        </body>
+    </function>
+    <function name="Karesi" type="Real" variable="sonuc">
+        <parameters>
+            <parameter name="sayi" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sonuc" type="Real" array="False" size=""/>
+            <assign variable="sonuc" expression="sayi * sayi"/>
+            <comment text="Karesi(sayi) = sayi * sayi"/>
+        </body>
+    </function>
+    <function name="KereYildizYazdir" type="None" variable="sonuc">
+        <parameters>
+            <parameter name="adet" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="adet" direction="inc" step="1">
+                <output expression="&quot;*&quot;" newline="False"/>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

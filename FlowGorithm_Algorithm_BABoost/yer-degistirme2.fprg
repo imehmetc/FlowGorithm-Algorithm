@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-29 02:26:13 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTswMTo1NzowOSBQTTsyNDAz"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTswMjoyNjoxMyBQTTszOzI1MDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="Random(10)"/>
+            <assign variable="b" expression="Random(10)"/>
+            <output expression="&quot;a: &quot;&amp; a &amp; &quot; b: &quot; &amp; b" newline="True"/>
+            <assign variable="a" expression="a + b"/>
+            <assign variable="b" expression="a - b"/>
+            <assign variable="a" expression="a - b"/>
+            <output expression="&quot;a: &quot;&amp; a &amp; &quot; b: &quot; &amp; b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

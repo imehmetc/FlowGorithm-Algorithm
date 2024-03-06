@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-29 05:18:39 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTswNDoyODo0OSBQTTsyNDA4"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTswNToxODozOSBQTTsxOzI1MTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, i" type="Integer" array="False" size=""/>
+            <declare name="asalMi" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Say&#305; girin&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <if expression="sayi &lt; 2">
+                <then>
+                    <assign variable="asalMi" expression="false"/>
+                </then>
+                <else>
+                    <assign variable="asalMi" expression="true"/>
+                </else>
+            </if>
+            <for variable="i" start="2" end="sayi - 1" direction="inc" step="1">
+                <if expression="sayi % i == 0">
+                    <then>
+                        <assign variable="asalMi" expression="false"/>
+                        <assign variable="i" expression="sayi"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="asalMi == true">
+                <then>
+                    <output expression="sayi &amp; &quot; Say&#305;s&#305; asald&#305;r.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="sayi &amp; &quot; Say&#305;s&#305; asal de&#287;ildir.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-05 11:33:41 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMy0wMTswMjowNTowNiBQTTsyMzg1"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMy0wNTsxMTozMzo0MSBQTTsyOzI0OTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="artikYil&#13;&#10;&#13;&#10;&#351;ubat 29 &#231;ekti&#287;i y&#305;llard&#305;r&#13;&#10;her 4 y&#305;lda bir &#351;ubat 29 &#231;eker&#13;&#10;istisna: 400'&#252;n kat&#305; olmayan 100'&#252;n katlar&#305;&#13;&#10;"/>
+            <declare name="yil, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Y&#305;l: &quot;" newline="True"/>
+            <input variable="yil"/>
+            <if expression="yil % 400 == 0">
+                <then>
+                    <output expression="yil &amp; &quot; Art&#305;k y&#305;l&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="yil % 100 == 0">
+                        <then>
+                            <output expression="yil &amp; &quot; Art&#305;k y&#305;l de&#287;il&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="yil % 4 == 0">
+                                <then>
+                                    <output expression="yil &amp; &quot; Art&#305;k y&#305;l&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="yil &amp; &quot; Art&#305;k y&#305;l de&#287;il&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

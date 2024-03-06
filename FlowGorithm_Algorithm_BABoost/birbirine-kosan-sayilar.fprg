@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-29 02:50:03 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTswMjoyODozNyBQTTsyNDAz"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTswMjo1MDowMyBQTTsyOzI1MDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Say&#305;1 Girin&quot;" newline="True"/>
+            <declare name="a, b, cikar, b&#246;l&#252;m" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <output expression="&quot;Say&#305;2 Girin&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="cikar" expression="abs(a - b)"/>
+            <assign variable="b&#246;l&#252;m" expression="(cikar + 2) / 2"/>
+            <while expression="b&#246;l&#252;m &gt; 0">
+                <output expression="a &amp; &quot; &quot; &amp; b" newline="True"/>
+                <assign variable="a" expression="a + 1"/>
+                <assign variable="b" expression="b - 1"/>
+                <assign variable="b&#246;l&#252;m" expression="b&#246;l&#252;m - 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

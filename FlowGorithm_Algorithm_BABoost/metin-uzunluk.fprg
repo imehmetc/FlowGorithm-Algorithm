@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-29 10:44:04 AM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTsxMDoyNDo0MiBBTTsyMzc5"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTsxMDo0NDowNCBBTTsyOzI0ODg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="metin" type="String" array="False" size=""/>
+            <declare name="uzunluk" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bir metin girin&quot;" newline="True"/>
+            <output expression="&quot;Kapatmak i&#231;in 'q' ya bas&#305;n &quot;" newline="True"/>
+            <input variable="metin"/>
+            <while expression="metin != &quot;q&quot;">
+                <assign variable="uzunluk" expression="Len(metin)"/>
+                <output expression="&quot;Girdi&#287;iniz metnin uzunlu&#287;u &quot; &amp; uzunluk &amp; &quot; karakterdir.&quot;" newline="True"/>
+                <input variable="metin"/>
+            </while>
+            <output expression="&quot;Program ba&#351;ar&#305;yla sonland&#305;r&#305;ld&#305;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

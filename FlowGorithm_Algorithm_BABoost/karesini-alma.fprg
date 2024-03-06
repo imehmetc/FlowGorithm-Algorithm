@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-28 03:37:18 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yODswMzoyNDo1MyBQTTsyMzk3"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yODswMzozNzoxOCBQTTsyOzI1MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Bir Say&#305; Girin&quot;" newline="True"/>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <input variable="sayi"/>
+            <assign variable="sayi" expression="sayi * sayi"/>
+            <output expression="&quot;Say&#305;n&#305;n Karesi:&quot; &amp; &quot; &quot; &amp;sayi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

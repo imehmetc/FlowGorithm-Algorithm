@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-28 04:46:19 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yODswNDozMzoyNSBQTTsyMzk3"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yODswNDo0NjoxOSBQTTsxOzI1MTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2, sayi3, k&#252;c&#252;kSayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;3 Say&#305; girin&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <input variable="sayi2"/>
+            <input variable="sayi3"/>
+            <assign variable="k&#252;c&#252;kSayi" expression="sayi1"/>
+            <if expression="sayi2 &lt; k&#252;c&#252;kSayi">
+                <then>
+                    <assign variable="k&#252;c&#252;kSayi" expression="sayi2"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="sayi3 &lt; k&#252;c&#252;kSayi">
+                <then>
+                    <assign variable="k&#252;c&#252;kSayi" expression="sayi3"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;K&#252;&#231;&#252;k Say&#305; &quot; &amp; k&#252;c&#252;kSayi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

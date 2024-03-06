@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-29 12:00:33 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTsxMTo0Mzo0NyBBTTsyMzg2"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTsxMjowMDozMyBQTTszOzI1MDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, tahmin" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="Random(10) + 1"/>
+            <output expression="&quot;Say&#305;y&#305; tahmin et&quot;" newline="True"/>
+            <input variable="tahmin"/>
+            <while expression="tahmin != sayi">
+                <output expression="&quot;Yanl&#305;&#351; say&#305; girdiniz&quot;" newline="True"/>
+                <if expression="tahmin &lt; sayi">
+                    <then>
+                        <output expression="&quot;Daha b&#252;y&#252;k bir say&#305; girin&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Daha k&#252;&#231;&#252;k bir say&#305; girin&quot;" newline="True"/>
+                    </else>
+                </if>
+                <input variable="tahmin"/>
+            </while>
+            <output expression="&quot;Bildin, say&#305;: &quot; &amp; sayi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

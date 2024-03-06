@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-01 04:35:13 PM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMy0wMTswNDowNTowMiBQTTsyMzgz"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMy0wMTswNDowOTo0MyBQTTszO2ltZWhtO0lNRUhNRVRDOzIwMjQtMDMtMDE7MDM6MzQ6NTUgUE07Y2FycGFubGFyLmZwcmc7NjQzNw=="/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMy0wMTswNDozNToxMyBQTTsyOzI0OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&#199;arpanlar (&#220;sl&#252; ifade ile yazd&#305;rma)&#13;&#10;&#13;&#10;36 -&gt; 2^2 * 3^2&#13;&#10;35 -&gt; 5^1 * 7^1&#13;&#10;32 -&gt; 2^5&#13;&#10;1024 -&gt; 2^10"/>
+            <declare name="sayi, b&#246;len, gecici, sayac, us" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#199;arpanlar&#305;na ayr&#305;lacak say&#305;y&#305; girin&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="b&#246;len" expression="2"/>
+            <assign variable="gecici" expression="0"/>
+            <assign variable="sayac" expression="0"/>
+            <while expression="sayi &gt; 1">
+                <assign variable="us" expression="0"/>
+                <if expression="sayi % b&#246;len == 0">
+                    <then>
+                        <while expression="sayi % b&#246;len == 0">
+                            <assign variable="sayi" expression="sayi / b&#246;len"/>
+                            <assign variable="us" expression="us + 1"/>
+                        </while>
+                        <output expression="b&#246;len &amp; &quot; ^ &quot; &amp; us" newline="False"/>
+                        <if expression="sayi &gt; 1">
+                            <then>
+                                <output expression="&quot; * &quot;" newline="False"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <assign variable="b&#246;len" expression="b&#246;len + 1"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

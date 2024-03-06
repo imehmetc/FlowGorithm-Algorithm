@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="imehm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-29 11:14:27 AM"/>
+        <attribute name="created" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTsxMDo0ODoyNSBBTTsyMzg2"/>
+        <attribute name="edited" value="aW1laG07SU1FSE1FVEM7MjAyNC0wMi0yOTsxMToxNDoyNyBBTTszOzI0OTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Notunuzu girin&quot;" newline="True"/>
+            <declare name="puan" type="Real" array="False" size=""/>
+            <declare name="harf" type="String" array="False" size=""/>
+            <input variable="puan"/>
+            <if expression="puan &lt; 0 OR puan &gt; 100">
+                <then>
+                    <output expression="&quot;L&#252;tfen ge&#231;erli bir not giriniz.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="puan &lt; 45">
+                        <then>
+                            <output expression="&quot;Notunuz F&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="puan &lt; 70">
+                                <then>
+                                    <output expression="&quot;Notunuz D&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="puan &lt; 80">
+                                        <then>
+                                            <output expression="&quot;Notunuz C&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="puan &lt; 90">
+                                                <then>
+                                                    <output expression="&quot;Notunuz B&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Notunuz A&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
